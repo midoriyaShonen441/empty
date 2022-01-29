@@ -8,15 +8,15 @@ mongoose_os_version: ${mos.version}
 
 # Optional. List of tags for online search.
 tags:
-  - c
+    - c
 
 # List of files / directories with C sources. No slashes at the end of dir names.
 sources:
-  - src
+    - src
 
 # List of dirs. Files from these dirs will be copied to the device filesystem
 filesystem:
-  - fs
+    - fs
 
 # Custom configuration entries, settable via "device configuration"
 # Below is a custom firmware configuration example.
@@ -46,11 +46,12 @@ filesystem:
 #  - ["debug.level", 3]
 
 libs:
-  - origin: https://github.com/mongoose-os-libs/boards
-  - origin: https://github.com/mongoose-os-libs/ca-bundle
-  - origin: https://github.com/mongoose-os-libs/rpc-service-config
-  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
-  - origin: https://github.com/mongoose-os-libs/rpc-uart
+    - origin: https://github.com/mongoose-os-libs/boards
+    - origin: https://github.com/mongoose-os-libs/ca-bundle
+    - origin: https://github.com/mongoose-os-libs/rpc-service-config
+    - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+    - origin: https://github.com/mongoose-os-libs/rpc-uart
+    - origin: https://github.com/mongoose-os-libs/mjs
 
 # Used by the mos tool to catch mos binaries incompatible with this file format
 manifest_version: 2017-09-29
